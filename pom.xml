@@ -54,36 +54,36 @@
         <artifactId>tomcat7-maven-plugin</artifactId>  
         <version>2.2</version> 
       </plugin>  
-      <plugin>
-        <groupId>com.microsoft.azure</groupId>
-        <artifactId>azure-webapp-maven-plugin</artifactId>
-        <version>1.12.0</version>
-        <configuration>
-          <schemaVersion>v2</schemaVersion>
-          <subscriptionId>7f8a3b12-a1e6-4ece-a559-9f19ddf0f59b</subscriptionId>
-          <resourceGroup>KhadijaResourceGroup</resourceGroup>
-          <appName>KhadijaLab12</appName>
-          <pricingTier>F1</pricingTier>
-          <region>canadacentral</region>
-          <appServicePlanName>ASP-KhadijaResourceGroup-b305</appServicePlanName>
-          <appServicePlanResourceGroup>KhadijaResourceGroup</appServicePlanResourceGroup>
-          <runtime>
-            <os>Windows</os>
-            <javaVersion>Java 8</javaVersion>
-            <webContainer>Tomcat 7.0</webContainer>
-          </runtime>
-          <deployment>
-            <resources>
-              <resource>
-                <directory>${project.basedir}/target</directory>
-                <includes>
-                  <include>*.war</include>
-                </includes>
-              </resource>
-            </resources>
-          </deployment>
-        </configuration>
-      </plugin>
+      <plugin> 
+        <groupId>com.microsoft.azure</groupId>  
+        <artifactId>azure-webapp-maven-plugin</artifactId>  
+        <version>1.12.0</version>  
+        <configuration> 
+          <schemaVersion>v2</schemaVersion>  
+          <subscriptionId>7f8a3b12-a1e6-4ece-a559-9f19ddf0f59b</subscriptionId>  
+          <resourceGroup>KhadijaResourceGroup</resourceGroup>  
+          <appName>khadija</appName>  
+          <pricingTier>F1</pricingTier>  
+          <region>canadacental</region>  
+          <appServicePlanName>ASP-KhadijaResourceGroup-b305</appServicePlanName>  
+          <appServicePlanResourceGroup>KhadijaResourceGroup</appServicePlanResourceGroup>  
+          <runtime> 
+            <os>Windows</os>  
+            <javaVersion>Java 8</javaVersion>  
+            <webContainer>Tomcat 7.0</webContainer> 
+          </runtime>  
+          <deployment> 
+            <resources> 
+              <resource> 
+                <directory>${project.basedir}/target</directory>  
+                <includes> 
+                  <include>*.war</include> 
+                </includes> 
+              </resource> 
+            </resources> 
+          </deployment> 
+        </configuration> 
+      </plugin> 
     </plugins> 
   </build> 
 </project>

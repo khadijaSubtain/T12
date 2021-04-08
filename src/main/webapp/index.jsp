@@ -64,7 +64,7 @@
                 Or login to access your details, if you are already registered.</p>
         </div>
 
-        <a class="btn btn-primary" href="games">Khadija Games commit</a>
+        <a class="btn btn-primary" href="games">Khadija Games commit 02</a>
         <a class="btn btn-primary" href="search">Search</a>
         <% if(request.getAttribute("authenticated") != null){ %>
         <a class="btn btn-primary" href="games?specials=true">Specials</a>
